@@ -1,0 +1,361 @@
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg: #0f172a;
+    --bg-light: #1e293b;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: var(--bg);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo-container img {
+    margin-right: 0.5rem;
+    width: 60px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.logo-container h1 {
+    margin-left: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    color: var(--text);
+    background-color: var(--bg-light);
+}
+
+
+.github-icon {
+    fill: currentColor;
+    width: 24px;
+    height: auto;
+}
+
+
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.hero-content p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    flex: 1 1 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 6px var(--primary);
+    transition: all 0.2s ease;
+}
+
+.hero-image:hover img {
+    transform: rotate(2deg);
+    box-shadow: 0 0 18px var(--primary);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transform: translateY(0);
+}
+
+.button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+#features {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--bg-light);
+    transition: all 0.2s ease;
+    scale: 1;
+}
+
+.feature h3 {
+    margin-top: 1rem;
+    color: var(--text);
+    font-size: 1.25rem;
+}
+
+.feature p {
+    margin-top: 0.75rem;
+    color: var(--text-muted);
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature:hover {
+    scale: 1.1;
+}
+
+#download {
+    background-color: var(--bg-light);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+#download h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+#download .button {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#download .requirements,
+#download .github-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+#download .github-link a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#download .github-link a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+#contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+#contact a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--bg);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 0;
+}
+
+footer a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-container img {
+        margin-right: 0.5rem;
+        max-height: 50px;
+    }
+
+    nav ul {
+        margin: 0.5rem 0 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 70%;
+        /* Noch kleiner */
+    }
+
+    .features-grid {
+        gap: 1rem;
+    }
+
+    .feature {
+        padding: 1rem;
+    }
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
