@@ -114,5 +114,25 @@
         <p>Made with &hearts;</p>
         <p>&copy; 2025 <a href="https://niiv3au.github.io">NiiV3AU</a>. All rights reserved.</p>
     </footer>
+    <script>
+      function addCloudflareAnalytics(siteToken) {
+        const script = document.createElement("script");
+        script.defer = true;
+        script.dataset.cfBeacon = `{"token": "${siteToken}"}`;
+        script.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        document.head.appendChild(script);
+        console.log(
+          `Cloudflare Web Analytics für GitHub Pages (Token: ${siteToken}) hinzugefügt.`
+        );
+      }
+
+      const currentHostname = window.location.hostname;
+      const githubPagesHostname = "niiv3au.github.io";
+      const githubPagesAnalyticsToken = "e759315bc30b49adb382b087660536e2";
+
+      if (currentHostname === githubPagesHostname) {
+        addCloudflareAnalytics(githubPagesAnalyticsToken);
+      }
+    </script>
 </body>
 </html>
