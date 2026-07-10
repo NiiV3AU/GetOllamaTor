@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow:
+Sitemap: https://ollamator.pages.dev/sitemap.xml
