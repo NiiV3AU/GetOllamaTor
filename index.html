@@ -1,64 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OllamaTor - Your local AI Chat</title>
+    <title>OllamaTor (Archived) - Your local AI Chat</title>
+    <link rel="canonical" href="https://ollamator.pages.dev/" />
+    <link
+      rel="preload"
+      href="./fonts/manrope-v20-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/manrope-v20-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <meta
       name="description"
-      content="OllamaTor provides a user-friendly interface for chatting with AI models locally using Ollama. Privacy-focused, powerful, and customizable."
+      content="OllamaTor (Archived) - A historical open-source interface for Ollama. This project is no longer actively maintained. Explore modern alternatives like LM Studio with Bionic, Jan, Ollama, and llama.cpp."
     />
     <meta
       name="keywords"
-      content="Ollama, AI, Chat, local, privacy, Open Source, LLM, Large Language Model"
+      content="Ollama, AI, Chat, local, privacy, Open Source, LLM, Large Language Model, LM Studio, Bionic, Jan, llama.cpp, Archived"
     />
-    <meta property="og:title" content="OllamaTor - Your local AI Chat" />
+    <meta
+      property="og:title"
+      content="OllamaTor (Archived) - Your local AI Chat"
+    />
     <meta
       property="og:description"
-      content="OllamaTor: local AI chat with Ollama. Privacy-focused and powerful."
+      content="OllamaTor is now archived. Explore modern alternatives for local AI chat: LM Studio (Bionic), Jan, Ollama, and llama.cpp."
     />
-    <meta property="og:image" content="./img/screenshot.png" />
-    <meta property="og:url" content="" />
+    <meta
+      property="og:image"
+      content="https://ollamator.pages.dev/img/screenshot.png"
+    />
+    <meta property="og:url" content="https://ollamator.pages.dev/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="OllamaTor - Your local AI Chat" />
+    <meta
+      name="twitter:title"
+      content="OllamaTor (Archived) - Your local AI Chat"
+    />
     <meta
       name="twitter:description"
-      content="OllamaTor: Local AI chat with Ollama."
+      content="OllamaTor is now archived. Explore modern alternatives for local AI chat: LM Studio (Bionic), Jan, Ollama, and llama.cpp."
     />
-    <meta name="twitter:image" content="./img/screenshot.png" />
+    <meta
+      name="twitter:image"
+      content="https://ollamator.pages.dev/img/screenshot.png"
+    />
     <meta name="twitter:site" content="@NiiV3AU" />
-    <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
+    <meta
+      name="google-site-verification"
+      content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg"
+    />
   </head>
-  <body>
+  <body id="top">
+    <aside
+      class="archive-banner"
+      role="status"
+      aria-label="Project Status Notice"
+    >
+      <div class="archive-banner-content">
+        <svg
+          class="archive-banner-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+          />
+        </svg>
+        <div class="archive-banner-text">
+          <strong>This repository has been archived.</strong>
+          <span
+            >OllamaTor is no longer actively maintained. For local AI chat and
+            agentic workflows, check out
+            <a href="#alternatives">LM Studio &amp; Bionic</a>,
+            <a href="#alternatives">Jan</a>, <a href="#alternatives">Ollama</a>,
+            or <a href="#alternatives">llama.cpp</a>.</span
+          >
+        </div>
+      </div>
+    </aside>
+
     <header>
-      <div class="logo-container">
+      <a
+        href="#top"
+        class="logo-container"
+        id="brand-link"
+        aria-label="OllamaTor - Back to top"
+      >
         <img
           src="./img/OllamaTor.gif"
-          loading="lazy"
+          decoding="async"
           alt="OllamaTor Logo"
           width="60"
           height="60"
         />
         <h1>OllamaTor</h1>
-      </div>
+      </a>
       <nav>
         <ul>
+          <li><a href="#alternatives">Alternatives</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#download">Archive</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
               href="https://github.com/NiiV3AU/OllamaTor"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub Repository"
             >
               <svg
                 class="github-icon"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 fill="currentColor"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -78,29 +149,173 @@
         <div class="hero-content">
           <h2>Local AI chat that respects your privacy.</h2>
           <p>
-            OllamaTor is a user-friendly interface for Ollama, allowing you to
-            chat with large language models (LLMs) directly on your computer. No
-            data leaves your system.
+            OllamaTor was an open-source interface for Ollama, allowing you to
+            chat with large language models (LLMs) directly on your computer.
+            The project is now archived and preserved for historical reference.
           </p>
-          <a href="#download" class="button">Download Now</a>
+          <div class="hero-actions">
+            <a href="#alternatives" class="button">Explore Alternatives</a>
+            <a href="#download" class="button button-secondary"
+              >Archived Project</a
+            >
+          </div>
         </div>
         <div class="hero-image">
           <img
             src="./img/screenshot.png"
-            loading="lazy"
-            alt="OllamaTor Screenshot"
+            width="986"
+            height="793"
+            fetchpriority="high"
+            decoding="async"
+            alt="OllamaTor Interface Screenshot"
           />
         </div>
       </section>
 
+      <section id="alternatives">
+        <h2>Modern Alternatives</h2>
+        <p class="section-subtitle">
+          The local AI ecosystem has advanced dramatically. I strongly recommend
+          migrating to these mature, actively maintained solutions:
+        </p>
+        <div class="alternatives-grid">
+          <div class="alternative-card">
+            <span class="alternative-badge">Desktop GUI &amp; Agents</span>
+            <svg
+              class="alternative-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"
+              />
+            </svg>
+            <h3>LM Studio &amp; Bionic&ast;</h3>
+            <p>
+              Desktop app with model discovery, GPU offloading, and
+              <strong>Bionic</strong> for local agentic workflows.
+            </p>
+            <a
+              href="https://lmstudio.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link"
+              >Visit lmstudio.ai &rarr;</a
+            >
+          </div>
+
+          <div class="alternative-card">
+            <span class="alternative-badge">Open-Source Desktop GUI</span>
+            <svg
+              class="alternative-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a.75.75 0 0 1-.974-.94 5.95 5.95 0 0 0 .548-2.58A8.04 8.04 0 0 1 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+              />
+            </svg>
+            <h3>Jan</h3>
+            <p>
+              Local-first, open-source ChatGPT alternative. Runs offline with
+              built-in inference or connects to an existing Ollama server.
+            </p>
+            <a
+              href="https://jan.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link"
+              >Visit jan.ai &rarr;</a
+            >
+          </div>
+
+          <div class="alternative-card">
+            <span class="alternative-badge">Desktop App, CLI &amp; API</span>
+            <svg
+              class="alternative-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H4.5A2.25 2.25 0 0 0 2.25 6v12A2.25 2.25 0 0 0 4.5 20.25Z"
+              />
+            </svg>
+            <h3>Ollama</h3>
+            <p>
+              Local model runner with an official desktop app, CLI, and HTTP API
+              for daily chat, scripts, or pairing with Web UIs like Open WebUI.
+            </p>
+            <a
+              href="https://ollama.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link"
+              >Visit ollama.com &rarr;</a
+            >
+          </div>
+
+          <div class="alternative-card">
+            <span class="alternative-badge">Foundational Core Engine</span>
+            <svg
+              class="alternative-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+              />
+            </svg>
+            <h3>llama.cpp</h3>
+            <p>
+              Foundational C/C++ inference engine developed by Georgi Gerganov,
+              powering most of the local consumer AI ecosystem.
+            </p>
+            <a
+              href="https://llama.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-link"
+              >Visit llama.app &rarr;</a
+            >
+          </div>
+        </div>
+        <div class="runtime-note">
+          <strong>&ast;Open Source Notice:</strong> LM Studio as well as Bionic
+          are closed source. If you prefer OSS, choose <strong>Jan</strong>,
+          <strong>Ollama</strong>, or <strong>llama.cpp</strong>.
+        </div>
+      </section>
+
       <section id="features">
-        <h2>Features</h2>
+        <h2>Features (Historical Overview)</h2>
         <div class="features-grid">
           <div class="feature">
             <img
               src="./img/shield.svg"
               loading="lazy"
-              alt="shield.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -111,7 +326,9 @@
             <img
               src="./img/bolt.svg"
               loading="lazy"
-              alt="bolt.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -122,7 +339,9 @@
             <img
               src="./img/settings.svg"
               loading="lazy"
-              alt="settings.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -133,7 +352,9 @@
             <img
               src="./img/offline.svg"
               loading="lazy"
-              alt="offline.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -144,7 +365,9 @@
             <img
               src="./img/github.svg"
               loading="lazy"
-              alt="github.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -157,7 +380,9 @@
             <img
               src="./img/click.svg"
               loading="lazy"
-              alt="click.svg couldn't load..."
+              decoding="async"
+              alt=""
+              aria-hidden="true"
               width="64"
               height="64"
             />
@@ -168,26 +393,39 @@
       </section>
 
       <section id="download">
-        <h2>Download</h2>
-        <p>
-          Get your OllamaTor copy for Windows and start chatting immediately.
-        </p>
+        <h2>Project Archive</h2>
+        <div>
+          <span class="archive-status-badge">Archived &bull; Read-Only</span>
+        </div>
+        <div class="archive-warning-box">
+          <strong>Archival &amp; Technical Advisory:</strong>
+          OllamaTor was built using Python Eel, orchestrating Chrome or Edge in
+          application mode via WebSockets. Because streaming AI responses were
+          rendered directly into <code>innerHTML</code> using
+          <code>marked.js</code> without DOM sanitization (such as DOMPurify),
+          model completions containing unescaped HTML,
+          <code>&lt;style&gt;</code> rules, or script payloads could manipulate
+          or break the application UI. Active development has ceased in favor of
+          hardened, mature alternatives. Legacy releases remain available for
+          historical interest only.
+        </div>
         <a
           href="https://github.com/NiiV3AU/OllamaTor/releases/latest/download/OllamaTor.exe"
           rel="noopener noreferrer"
-          class="button"
-          >Download for Windows</a
+          class="button button-secondary"
+          title="Legacy release - archived"
+          >Download Legacy Release (Archived)</a
         >
         <p class="requirements">
-          System Requirements: Windows 10/11 (64-bit), Ollama & Chrome/Edge
-          installed.
+          Historical System Requirements: Windows 10/11 (64-bit), Ollama &amp;
+          Chrome/Edge installed.
         </p>
         <p class="github-link">
           <a
             href="https://github.com/NiiV3AU/OllamaTor"
             target="_blank"
             rel="noopener noreferrer"
-            >Go to GitHub Repository</a
+            >View Source Code on GitHub</a
           >
         </p>
       </section>
@@ -220,28 +458,32 @@
         &copy; 2025
         <a href="https://niiv3au.github.io" target="_blank" rel="noopener"
           >NiiV3AU</a
-        >. All rights reserved.
+        >. Project Archived.
       </p>
+      <div class="privacy-disclosure">
+        <details>
+          <summary>Privacy &amp; Analytics Notice</summary>
+          <p>
+            This static website utilizes
+            <strong>Cloudflare Web Analytics</strong> to measure aggregate
+            traffic and Core Web Vitals. It operates without cookies, local
+            storage, or persistent device identifiers, and collects no
+            personally identifiable information (PII).
+          </p>
+        </details>
+      </div>
     </footer>
     <script>
-      function addCloudflareAnalytics(siteToken) {
-        const script = document.createElement("script");
-        script.defer = true;
-        script.dataset.cfBeacon = `{"token": "${siteToken}"}`;
-        script.src = "https://static.cloudflareinsights.com/beacon.min.js";
-        document.head.appendChild(script);
-        console.log(
-          `Cloudflare Web Analytics für GitHub Pages (Token: ${siteToken}) hinzugefügt.`
-        );
-      }
-
-      const currentHostname = window.location.hostname;
-      const githubPagesHostname = "niiv3au.github.io";
-      const githubPagesAnalyticsToken = "e759315bc30b49adb382b087660536e2";
-
-      if (currentHostname === githubPagesHostname) {
-        addCloudflareAnalytics(githubPagesAnalyticsToken);
-      }
+      // Smooth scroll to top and reset URL hash without hard reload
+      document
+        .getElementById("brand-link")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          if (window.location.hash) {
+            history.pushState(null, "", window.location.pathname);
+          }
+        });
     </script>
   </body>
 </html>

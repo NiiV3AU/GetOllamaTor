@@ -1,3 +1,6 @@
-# This is not what you're looking for?
-|[OllamaTor Repo](https://github.com/NiiV3AU/OllamaTor)|[OllamaTor Website](https://niiv3au.github.io/GetOllamaTor)|
-|-|-|
+# OllamaTor Website (Archived)
+
+This repository hosts the static landing page for **OllamaTor**, which is now archived and preserved for historical reference.
+
+| [Archived App Repo](https://github.com/NiiV3AU/OllamaTor) | [Live Website](https://ollamator.pages.dev/) |
+| --------------------------------------------------------- | -------------------------------------------- |
